@@ -81,7 +81,7 @@ For AlphaFold3, you can either use the code from the [GitHub repo](https://githu
 
 If you choose to use the GitHub repo, please follow their official guidelines. 
 
-If you choose to use the web server, please follow the instruction below:
+If you choose to use the web server, please follow the instruction below. Note the AF3 web server has a limitation of 30 jobs everyday, so you might use multiple gmail accounts to fini all the evaluations, like around 3 should be enough. 
 
 ### Running AlphaFold3 Evaluation
 
