@@ -599,7 +599,7 @@ class ProGenForCausalLM(ProGenPreTrainedModel):
         self.lm_head = nn.Linear(config.n_embd, config.vocab_size)
         self.init_weights()
         
-        # Model parallel
+        # Model parallel 
         self.model_parallel = False
         self.device_map = None
 
