@@ -106,11 +106,27 @@ To run the evaluation, follow the instruction below:
 
 (6) Find the top-5 candidates with the highest pLDDT, of which the pTM scores should be higher than 0.8. If not, there might be something wrong with your finetuning process
 
+## Divergence Analysis
 
+Compute the consensus sequence of `data/train.txt` (most frequent residue at
+each position).
+
+Compare each of your top-5 designs to the consensus and report:
+
+1. **Substitution table** — one row per design, every differing position in
+   `A36V` format (consensus residue, position, design residue).
+2. **Positional distribution** — where along the 237 residues the
+   substitutions fall.
+3. **Decoding strategy** — which one you used in `inference.py`, and its
+   parameters.
+4. **Interpretation (one paragraph)** — based on those positions, what did
+   your finetuned model contribute to each design, and what was your pLDDT
+   ranking distinguishing between?
+   
 ## Submit Your Results
 
 Please compress all the results into a zip file, and the results should include:
 
 (1)	**The fully filled code**. Note don’t submit the data but only submit the python files
 
-(2)	**A PDF file for the top 5 candidate report**. Please include the detailed information about your top-5 candiates, including the Alphafold3 visualization, sequences, pTM score, pLDDT score, and provide an explanation of these metrics.
+(2)	**A PDF file for the top 5 candidate report**. Please include the detailed information about your top-5 candiates, including the Alphafold3 visualization, sequences, pTM score, pLDDT score, and provide an explanation of these metrics along with divergence analysis.
