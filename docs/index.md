@@ -4,7 +4,7 @@ ProGen2 is a foundation model for protein design. For detailed information, plea
 
 In this assignment, you'll learn how to finetune the pretrained ProGen2 model on a specific protein family, e.g., green fluorescent protein.
 Then you'll need to apply AlphaFold3 metrics to select good candidates which are highly potential to 
-have the desired function from your finetuned model.
+have the desired function from your finetuned model.    
 
 ![image](images/GFP.png)
 
